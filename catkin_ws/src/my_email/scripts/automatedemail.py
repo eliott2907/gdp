@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+import rospy
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -14,8 +16,8 @@ def send_email():
     # Get current time in UK timezone
     uk_timezone = pytz.timezone('Europe/London')
     current_time = datetime.now(uk_timezone).strftime('%Y-%m-%dT%H:%M:%S%z')
-    subject = 'Automated Email'
-    message = f'Hello, this is an automated email sent using Python!\nTimestamp:{current_time}'
+    subject = 'an automated email'
+    message = f'Hello, this is an automated email sent using Python\nTimestamp:{current_time}'
 
     # Create message container
     msg = MIMEMultipart()
@@ -38,6 +40,8 @@ def send_email():
     # Close the SMTP server connection
     server.quit()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
+    rospy.init_node("sending_email")
+    rospy.loginfo("trying to send email")
     send_email()
-    print("Email sent successfully!")
+    rospy.loginfo("email sent")
