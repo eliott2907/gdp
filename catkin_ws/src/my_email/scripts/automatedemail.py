@@ -10,7 +10,7 @@ def send_email():
     # Email details
 
     sender_email = 'eliott.laurent@ecam.fr'
-    sender_password = 'Eliott2907?'
+    sender_password = ''
 
     recipient_email = 'eliott.laurent1@gmail.com'
     # Get current time in UK timezone
