@@ -1,0 +1,2 @@
+my_email
+-DCATKIN_DEVEL_PREFIX=/home/eliott/Documents/gdp/mail/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/eliott/Documents/gdp/mail/catkin_ws/install -G Unix Makefiles

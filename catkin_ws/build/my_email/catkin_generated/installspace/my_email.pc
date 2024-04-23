@@ -1,0 +1,8 @@
+prefix=/home/eliott/Documents/gdp/mail/catkin_ws/install
+
+Name: my_email
+Description: Description of my_email
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
