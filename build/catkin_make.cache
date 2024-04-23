@@ -1,0 +1,2 @@
+server_processor
+-DCATKIN_DEVEL_PREFIX=/home/eliott/server_ws/devel -DCMAKE_INSTALL_PREFIX=/home/eliott/server_ws/install -G Unix Makefiles

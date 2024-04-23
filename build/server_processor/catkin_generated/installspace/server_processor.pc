@@ -1,0 +1,8 @@
+prefix=/home/eliott/server_ws/install
+
+Name: server_processor
+Description: Description of server_processor
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
